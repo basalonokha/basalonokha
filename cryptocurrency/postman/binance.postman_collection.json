@@ -1,0 +1,1385 @@
+{
+	"info": {
+		"_postman_id": "55da995d-a64d-4025-9d50-d1cbdea33ff5",
+		"name": "binance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all asset v2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "e60cfd41-5208-41d6-a2ac-d980ce8166ea"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "e60cfd41-5208-41d6-a2ac-d980ce8166ea"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi42MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNjEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiM2NmNjNkNmEwMTQ4YWQwMDFhMDQwMDRmNTUzZWZkOTgiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633249539547; fiat-prefer-currency=EUR; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/asset/v2/public/asset/asset/get-all-asset",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"asset",
+						"v2",
+						"public",
+						"asset",
+						"asset",
+						"get-all-asset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "dd633341-4d97-4376-8cfb-178cec5f54cf"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "dd633341-4d97-4376-8cfb-178cec5f54cf"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi42MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNjEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiM2NmNjNkNmEwMTQ4YWQwMDFhMDQwMDRmNTUzZWZkOTgiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633249539547; fiat-prefer-currency=EUR; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/asset/v2/public/asset-service/product/get-products?includeEtf=true",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"asset",
+						"v2",
+						"public",
+						"asset-service",
+						"product",
+						"get-products"
+					],
+					"query": [
+						{
+							"key": "includeEtf",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "web socket stream",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.binance.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "FsP4ljXlyIDyBPaw3rC0ew=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://stream.binance.com/stream",
+					"protocol": "wss",
+					"host": [
+						"stream",
+						"binance",
+						"com"
+					],
+					"path": [
+						"stream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "currency",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "da62c207-7727-4ea9-8c18-fbb678112596"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "da62c207-7727-4ea9-8c18-fbb678112596"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/markets"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/asset/v1/public/asset-service/product/currency",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"asset",
+						"v1",
+						"public",
+						"asset-service",
+						"product",
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agg trades by symbol",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "de055e61-c62f-4f87-a46f-1458d09bdb89"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "de055e61-c62f-4f87-a46f-1458d09bdb89"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/BNB_BUSD"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; _gat=1; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/api/v1/aggTrades?limit=80&symbol=BNBBUSD",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"aggTrades"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "80"
+						},
+						{
+							"key": "symbol",
+							"value": "BNBBUSD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "klines v3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "394cdcb0-fa76-4572-98ba-3cc9dbff78b0"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "394cdcb0-fa76-4572-98ba-3cc9dbff78b0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/1INCH_BTC"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/api/v3/klines?symbol=1INCHBTC&interval=1d",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "1INCHBTC"
+						},
+						{
+							"key": "interval",
+							"value": "1d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get symbols",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "c8e5a3c6-138e-4119-853f-a31ce9de959c"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "c8e5a3c6-138e-4119-853f-a31ce9de959c"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/ACM_BTC"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "cid=7JgFFxXO; home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/margin/v1/friendly/margin/symbols",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"margin",
+						"v1",
+						"friendly",
+						"margin",
+						"symbols"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product by symbol",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "40a1f40a-63f8-416e-8262-bde4f3947a32"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "40a1f40a-63f8-416e-8262-bde4f3947a32"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/1INCH_BTC"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/asset/v2/public/asset-service/product/get-product-by-symbol?symbol=1INCHBTC",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"asset",
+						"v2",
+						"public",
+						"asset-service",
+						"product",
+						"get-product-by-symbol"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "1INCHBTC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isolated-margin pair isted",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "a9e1b4a3-825f-4d75-afeb-3272c1ea7ac4"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "a9e1b4a3-825f-4d75-afeb-3272c1ea7ac4"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/ACM_BTC"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; userPreferredCurrency=USD_USD; fiat-prefer-currency=EUR; defaultMarketTab=favorite; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/margin/v1/public/isolated-margin/pair/listed",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"margin",
+						"v1",
+						"public",
+						"isolated-margin",
+						"pair",
+						"listed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "simbole details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "49033b57-c53e-46d5-850b-9f2c13f26935"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "49033b57-c53e-46d5-850b-9f2c13f26935"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/markets"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; _gid=GA1.2.662551753.1633163137; fiat-prefer-currency=EUR; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633335963028; monitor-uuid=dc923f22-5cba-48b2-b616-05838dfadd64; userPreferredCurrency=ARS_USD; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; lang=en; gtId=cb1cc852-1dfa-4250-abe8-1c912c90b7da; defaultMarketTab=spot; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/bapi/composite/v1/public/marketing/symbol/list",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"bapi",
+						"composite",
+						"v1",
+						"public",
+						"marketing",
+						"symbol",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order book",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "27155de9-74a0-409e-a560-b60e00fcca6b"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "27155de9-74a0-409e-a560-b60e00fcca6b"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/BTC_USDT?layout=basic"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; userPreferredCurrency=ARS_USD; defaultMarketTab=spot; fiat-prefer-currency=USD; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; _gid=GA1.2.575050042.1633777062; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633863464123; _gat_UA-162512367-1=1; monitor-uuid=b553f3e4-fdff-4f4a-ad04-c8b0dee1015b; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/api/v3/depth?symbol=BTCUSDT&limit=1000",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"depth"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kline with date",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.binance.com"
+					},
+					{
+						"key": "x-trace-id",
+						"value": "6b7f1b4c-8f1e-415e-ac15-923e620c107f"
+					},
+					{
+						"key": "csrftoken",
+						"value": "d41d8cd98f00b204e9800998ecf8427e"
+					},
+					{
+						"key": "x-ui-request-trace",
+						"value": "6b7f1b4c-8f1e-415e-ac15-923e620c107f"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "lang",
+						"value": "en"
+					},
+					{
+						"key": "fvideo-id",
+						"value": "314d1d12b309a1d4b9682fe3f798030cf9396243"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "device-info",
+						"value": "eyJzY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTQsMTIzNCIsImF2YWlsYWJsZV9zY3JlZW5fcmVzb2x1dGlvbiI6IjIxOTUsMTIzNSIsInN5c3RlbV92ZXJzaW9uIjoiTGludXggeDg2XzY0IiwiYnJhbmRfbW9kZWwiOiJ1bmtub3duIiwic3lzdGVtX2xhbmciOiJmYSIsInRpbWV6b25lIjoiR01UKzQiLCJ0aW1lem9uZU9mZnNldCI6LTIxMCwidXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk0LjAuNDYwNi43MSBTYWZhcmkvNTM3LjM2IiwibGlzdF9wbHVnaW4iOiJQREYgVmlld2VyLENocm9tZSBQREYgVmlld2VyLENocm9taXVtIFBERiBWaWV3ZXIsTWljcm9zb2Z0IEVkZ2UgUERGIFZpZXdlcixXZWJLaXQgYnVpbHQtaW4gUERGIiwiY2FudmFzX2NvZGUiOiI5NDI4MTJlNyIsIndlYmdsX3ZlbmRvciI6Ikdvb2dsZSBJbmMuIChJbnRlbCkiLCJ3ZWJnbF9yZW5kZXJlciI6IkFOR0xFIChJbnRlbCwgTWVzYSBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKENNTCBHVDIpLCBPcGVuR0wgNC42IChDb3JlIFByb2ZpbGUpIE1lc2EgMjEuMC4zKSIsImF1ZGlvIjoiMTI0LjA0MzQ3NTI3NTE2MDc0IiwicGxhdGZvcm0iOiJMaW51eCB4ODZfNjQiLCJ3ZWJfdGltZXpvbmUiOiJBc2lhL1RlaHJhbiIsImRldmljZV9uYW1lIjoiQ2hyb21lIFY5NC4wLjQ2MDYuNzEgKExpbnV4KSIsImZpbmdlcnByaW50IjoiMzk5MjJmNGVjYmNlMmM4OTY1YWQ0NTI2OGFkZDI2YTQiLCJkZXZpY2VfaWQiOiIiLCJyZWxhdGVkX2RldmljZV9pZHMiOiIifQ=="
+					},
+					{
+						"key": "bnc-uuid",
+						"value": "962f7090-d619-4dfe-844d-10db1aa966e3"
+					},
+					{
+						"key": "clienttype",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.binance.com/en/trade/BTC_USDT?layout=basic"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "home-ui-ab=A; bnc-uuid=962f7090-d619-4dfe-844d-10db1aa966e3; source=organic; campaign=www.google.com; _ga=GA1.2.641011867.1633163137; userPreferredCurrency=ARS_USD; defaultMarketTab=spot; fiat-prefer-currency=USD; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c401bd0c81b-0ce8afb8a96586-142f1c08-2707396-17c401bd0c9b33%22%7D; _gid=GA1.2.575050042.1633777062; BNC_FV_KEY=314d1d12b309a1d4b9682fe3f798030cf9396243; BNC_FV_KEY_EXPIRE=1633863464123; monitor-uuid=b553f3e4-fdff-4f4a-ad04-c8b0dee1015b; lang=en"
+					}
+				],
+				"url": {
+					"raw": "https://www.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1d&limit=1000&startTime=1585223607000&endTime=1589370780000",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"klines"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTCUSDT"
+						},
+						{
+							"key": "interval",
+							"value": "1d"
+						},
+						{
+							"key": "limit",
+							"value": "1000"
+						},
+						{
+							"key": "startTime",
+							"value": "1585223607000"
+						},
+						{
+							"key": "endTime",
+							"value": "1589370780000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exchange-api/v2/public/asset-service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.binance.com/exchange-api/v2/public/asset-service/product/get-products",
+					"protocol": "https",
+					"host": [
+						"www",
+						"binance",
+						"com"
+					],
+					"path": [
+						"exchange-api",
+						"v2",
+						"public",
+						"asset-service",
+						"product",
+						"get-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exchangeInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.binance.com/api/v3/exchangeInfo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"binance",
+						"com"
+					],
+					"path": [
+						"api",
+						"v3",
+						"exchangeInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

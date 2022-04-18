@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "22c709df-4272-4d6c-a994-90f4276a6a1d",
+		"name": "utils",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add variable to JSON body",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Setting the \"Signature\" collection variable to \"encryption\"\r",
+							"pm.collectionVariables.set(\"Signature\", \"encryption\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"referenceId\": \"022078925508\",\r\n    \"productCode\": \"001002461285\",\r\n    \"quantity\": \"1\",\r\n    \"version\": \"V1\",\r\n    \"signature\": \"{{Signature}}\",\r\n    \"applicationCode\": \"52e7cf966b724749a7c4efadc3727ed7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://postman-echo.com/post",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON to CSV",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const items = pm.response.json().data\r",
+							"const replacer = (key, value) => value === null ? '' : value // specify how you want to handle null values here\r",
+							"const header = Object.keys(items[0])\r",
+							"const csv = [\r",
+							"  header.join(','), // header row first\r",
+							"  ...items.map(row => header.map(fieldName => JSON.stringify(row[fieldName], replacer)).join(','))\r",
+							"].join('\\r\\n')\r",
+							"\r",
+							"console.log(csv)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Kinney Grant\",\r\n    \"location\": \"Netherlands Antilles\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca7f426813c10ceb9a\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Daphne Craft\",\r\n    \"location\": \"Saint Kitts and Nevis\",\r\n    \"verified\": false,\r\n    \"id\": \"610c22ca1b43e1984fe2d506\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Shana Haney\",\r\n    \"location\": \"Vanuatu\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca874b274a879e1a4a\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Mayra Weiss\",\r\n    \"location\": \"Honduras\",\r\n    \"verified\": false,\r\n    \"id\": \"610c22cac7c2aa2843f93687\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Angelica Duffy\",\r\n    \"location\": \"Cambodia\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca5c87b8563309f2e6\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "postman-echo.com/post",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				},
+				"description": "Using [Christian Landgren's answer from Stackoverflow](https://stackoverflow.com/a/31536517) to convert JSON to CSV. \n\n1. Set `items` to the value you'd like to parse\n2. Check the console to see the results."
+			},
+			"response": [
+				{
+					"name": "JSON to CSV",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"name\": \"Kinney Grant\",\r\n    \"location\": \"Netherlands Antilles\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca7f426813c10ceb9a\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Daphne Craft\",\r\n    \"location\": \"Saint Kitts and Nevis\",\r\n    \"verified\": false,\r\n    \"id\": \"610c22ca1b43e1984fe2d506\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Shana Haney\",\r\n    \"location\": \"Vanuatu\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca874b274a879e1a4a\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Mayra Weiss\",\r\n    \"location\": \"Honduras\",\r\n    \"verified\": false,\r\n    \"id\": \"610c22cac7c2aa2843f93687\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  },\r\n  {\r\n    \"name\": \"Angelica Duffy\",\r\n    \"location\": \"Cambodia\",\r\n    \"verified\": true,\r\n    \"id\": \"610c22ca5c87b8563309f2e6\",\r\n    \"created_at\": \"{{date()}\",\r\n    \"description\": \"{{lorem()}\",\r\n    \"username\": \"{{surname()}\",\r\n    \"url\": \"{{lorem()}\",\r\n    \"profile_image_url\": \"{{lorem()}\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "postman-echo.com/post",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 05 Aug 2021 18:04:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ac7-XllaoUaKsZMn2hhI0UjSwsOHquo\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "set-cookie",
+							"value": "sails.sid=s%3ArF5J8j3i6hiUYObGEgaCpyn_iPH1sjWi.EtPN4qvXk6OrjW3Fp0hA7rvCQr8R%2FuP6zdiu2Io8nXw; Path=/; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"args\": {},\n    \"data\": [\n        {\n            \"name\": \"Kinney Grant\",\n            \"location\": \"Netherlands Antilles\",\n            \"verified\": true,\n            \"id\": \"610c22ca7f426813c10ceb9a\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Daphne Craft\",\n            \"location\": \"Saint Kitts and Nevis\",\n            \"verified\": false,\n            \"id\": \"610c22ca1b43e1984fe2d506\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Shana Haney\",\n            \"location\": \"Vanuatu\",\n            \"verified\": true,\n            \"id\": \"610c22ca874b274a879e1a4a\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Mayra Weiss\",\n            \"location\": \"Honduras\",\n            \"verified\": false,\n            \"id\": \"610c22cac7c2aa2843f93687\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Angelica Duffy\",\n            \"location\": \"Cambodia\",\n            \"verified\": true,\n            \"id\": \"610c22ca5c87b8563309f2e6\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        }\n    ],\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"http\",\n        \"x-forwarded-port\": \"80\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-610c2827-1e54ccfa787d4c370f7d74cf\",\n        \"content-length\": \"1504\",\n        \"content-type\": \"application/json\",\n        \"user-agent\": \"PostmanRuntime/7.28.3\",\n        \"accept\": \"*/*\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"98190e3e-ab66-4cf7-ad70-b00bfe3368a9\",\n        \"accept-encoding\": \"gzip, deflate, br\"\n    },\n    \"json\": [\n        {\n            \"name\": \"Kinney Grant\",\n            \"location\": \"Netherlands Antilles\",\n            \"verified\": true,\n            \"id\": \"610c22ca7f426813c10ceb9a\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Daphne Craft\",\n            \"location\": \"Saint Kitts and Nevis\",\n            \"verified\": false,\n            \"id\": \"610c22ca1b43e1984fe2d506\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Shana Haney\",\n            \"location\": \"Vanuatu\",\n            \"verified\": true,\n            \"id\": \"610c22ca874b274a879e1a4a\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Mayra Weiss\",\n            \"location\": \"Honduras\",\n            \"verified\": false,\n            \"id\": \"610c22cac7c2aa2843f93687\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        },\n        {\n            \"name\": \"Angelica Duffy\",\n            \"location\": \"Cambodia\",\n            \"verified\": true,\n            \"id\": \"610c22ca5c87b8563309f2e6\",\n            \"created_at\": \"{{date()}\",\n            \"description\": \"{{lorem()}\",\n            \"username\": \"{{surname()}\",\n            \"url\": \"{{lorem()}\",\n            \"profile_image_url\": \"{{lorem()}\"\n        }\n    ],\n    \"url\": \"http://postman-echo.com/post\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Count length of Array",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json().data[0].friends;\r",
+							"\r",
+							"pm.test('Number of friends = ' + data.length, function () {\r",
+							"    pm.expect(data.length).to.equal(3);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"_id\": \"604a3774ee6b45c41fc3c62d\",\r\n    \"index\": 0,\r\n    \"name\": \"Melisa Edwards\",\r\n    \"friends\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"Traci Brennan\"\r\n      },\r\n      {\r\n        \"id\": 1,\r\n        \"name\": \"Solomon Hayes\"\r\n      },\r\n      {\r\n        \"id\": 2,\r\n        \"name\": \"Simpson Santiago\"\r\n      }\r\n    ],\r\n    \"greeting\": \"Hello, Melisa Edwards! You have 8 unread messages.\"\r\n  },\r\n  {\r\n    \"_id\": \"604a37745677b6eba7703343\",\r\n    \"index\": 1,\r\n    \"name\": \"Vickie Witt\",\r\n    \"friends\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"Roth Farley\"\r\n      },\r\n      {\r\n        \"id\": 1,\r\n        \"name\": \"Angeline Eaton\"\r\n      },\r\n      {\r\n        \"id\": 2,\r\n        \"name\": \"Jeanette Rosario\"\r\n      }\r\n    ],\r\n    \"greeting\": \"Hello, Vickie Witt! You have 10 unread messages.\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://postman-echo.com/post",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count number of Keys",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = pm.response.json().data;\r",
+							"\r",
+							"var count = Object.keys(data).length;\r",
+							"\r",
+							"console.log(\"The number of expected keys in the response body is: \" + count);\r",
+							"\r",
+							"// using Lodash - https://lodash.com/docs/4.17.15#size \r",
+							"console.log(`Number of keys: ${_.size(data)}`)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"_id\": \"604a3774ee6b45c41fc3c62d\",\r\n    \"index\": 0,\r\n    \"name\": \"Melisa Edwards\",\r\n    \"friends\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"Traci Brennan\"\r\n      },\r\n      {\r\n        \"id\": 1,\r\n        \"name\": \"Solomon Hayes\"\r\n      },\r\n      {\r\n        \"id\": 2,\r\n        \"name\": \"Simpson Santiago\"\r\n      }\r\n    ],\r\n    \"greeting\": \"Hello, Melisa Edwards! You have 8 unread messages.\"\r\n  },\r\n  {\r\n    \"_id\": \"604a37745677b6eba7703343\",\r\n    \"index\": 1,\r\n    \"name\": \"Vickie Witt\",\r\n    \"friends\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"Roth Farley\"\r\n      },\r\n      {\r\n        \"id\": 1,\r\n        \"name\": \"Angeline Eaton\"\r\n      },\r\n      {\r\n        \"id\": 2,\r\n        \"name\": \"Jeanette Rosario\"\r\n      }\r\n    ],\r\n    \"greeting\": \"Hello, Vickie Witt! You have 10 unread messages.\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://postman-echo.com/post",
+					"protocol": "http",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

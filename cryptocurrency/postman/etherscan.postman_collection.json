@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "d68347da-aa63-46a8-b7cd-230f28625358",
+		"name": "etherscan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gas tracker",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "etherscan.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://etherscan.io/gastracker"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "ASP.NET_SessionId=mxfolbq3dgpixie2hc2ab3o4; __cflb=02DiuFnsSsHWYH8WqVXbZzkeTrZ6gtmGUZuEWX3qhqKEC; _gid=GA1.2.1017168080.1638179123; etherscan_cookieconsent=True; amp_fef1e8=d3e3fb39-b95a-41e9-85da-6655da075912R...1fllkh9al.1fllkh9aq.1.1.2; _ga_0JZ9C3M56S=GS1.1.1638182466.1.1.1638182508.0; _ga=GA1.2.429352400.1638179123; __cf_bm=uNergTNuolRgpg7p01Ro_8VuG19XKJuME9SawJrON.k-1638183307-0-AcDwjaFacjZly63CYyMEFJ2k+qhuGwLT18EJ+2kHrBkKN0iFwFyhcYTY13fLUK6mhP7wkCpTNKuQAFsXaY1Nfjr+RQI07GgScKfyqUNbnvld0A3xPxE6H5ROivPoKA694w==; _gat_gtag_UA_46998878_6=1"
+					}
+				],
+				"url": {
+					"raw": "https://etherscan.io/autoUpdateGasTracker.ashx?sid=3e186eed30c7da74da263731ce147d98",
+					"protocol": "https",
+					"host": [
+						"etherscan",
+						"io"
+					],
+					"path": [
+						"autoUpdateGasTracker.ashx"
+					],
+					"query": [
+						{
+							"key": "sid",
+							"value": "3e186eed30c7da74da263731ce147d98"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historical gas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "etherscan.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://etherscan.io/gastracker"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "ASP.NET_SessionId=mxfolbq3dgpixie2hc2ab3o4; __cflb=02DiuFnsSsHWYH8WqVXbZzkeTrZ6gtmGUZuEWX3qhqKEC; _gid=GA1.2.1017168080.1638179123; etherscan_cookieconsent=True; amp_fef1e8=d3e3fb39-b95a-41e9-85da-6655da075912R...1fllkh9al.1fllkh9aq.1.1.2; _ga_0JZ9C3M56S=GS1.1.1638182466.1.1.1638182508.0; _ga=GA1.2.429352400.1638179123; __cf_bm=uNergTNuolRgpg7p01Ro_8VuG19XKJuME9SawJrON.k-1638183307-0-AcDwjaFacjZly63CYyMEFJ2k+qhuGwLT18EJ+2kHrBkKN0iFwFyhcYTY13fLUK6mhP7wkCpTNKuQAFsXaY1Nfjr+RQI07GgScKfyqUNbnvld0A3xPxE6H5ROivPoKA694w==; _gat_gtag_UA_46998878_6=1"
+					}
+				],
+				"url": {
+					"raw": "https://etherscan.io/gasHistoricalPriceHandler.ashx?sid=3e186eed30c7da74da263731ce147d98",
+					"protocol": "https",
+					"host": [
+						"etherscan",
+						"io"
+					],
+					"path": [
+						"gasHistoricalPriceHandler.ashx"
+					],
+					"query": [
+						{
+							"key": "sid",
+							"value": "3e186eed30c7da74da263731ce147d98"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

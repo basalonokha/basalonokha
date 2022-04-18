@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "9b244f30-53c6-4c58-8e31-d252dc8de6ae",
+		"name": "gemini",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.gemini.com/api/all-prices/1d",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.gemini.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.gemini.com/prices"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "_gcl_au=1.1.335063319.1633185957; country=FR; exchange_is_logged_in=no; _uetsid=7802cf50238f11eca73807748e7cb4f3; _uetvid=78043590238f11ecbd796d9af6b7c00b; cookieSettings={%22hasDismissed%22:true%2C%22allowAnalytics%22:false%2C%22isGDPR%22:true}"
+					}
+				],
+				"url": {
+					"raw": "https://www.gemini.com/api/all-prices/1d",
+					"protocol": "https",
+					"host": [
+						"www",
+						"gemini",
+						"com"
+					],
+					"path": [
+						"api",
+						"all-prices",
+						"1d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

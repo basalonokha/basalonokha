@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "0e5ced9c-a96a-4214-9143-940f30aa5ca3",
+		"name": "tradingview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "wss://data.tradingview.com/socket.io/websocket?from=chart%2F&date=2021_10_01-14_36",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tradingview.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "zytkmgWsEaO1n24wSxpQ6A=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://data.tradingview.com/socket.io/websocket?from=chart%2F&date=2021_10_01-14_36",
+					"protocol": "wss",
+					"host": [
+						"data",
+						"tradingview",
+						"com"
+					],
+					"path": [
+						"socket.io",
+						"websocket"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "chart%2F"
+						},
+						{
+							"key": "date",
+							"value": "2021_10_01-14_36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wss://data.tradingview.com/socket.io/websocket?from=markets%2F&date=2021_10_01-14_36",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.tradingview.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "Ao10c7aKcalzIRT6VaPWig=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"m\": \"qsd\",\n    \"p\": [\n        \"qs_SjG4QQWzFJCn\",\n        {\n            \"n\": \"BINANCE:BTCUSDT\",\n            \"s\": \"ok\",\n            \"v\": {\n                \"volume\": 41697.282946,\n                \"lp_time\": 1633525996,\n                \"lp\": 54242.58,\n                \"chp\": 5.38,\n                \"ch\": 2770.59\n            }\n        }\n    ]\n},\n{\n    \"m\": \"qsd\",\n    \"p\": [\n        \"qs_ElZnWZOkhsUK\",\n        {\n            \"n\": \"={\\\"symbol\\\":\\\"BINANCE:BTCUSDT\\\",\\\"currency-id\\\":\\\"XTVCUSDT\\\",\\\"adjustment\\\":\\\"splits\\\",\\\"session\\\":\\\"extended\\\"}\",\n            \"s\": \"ok\",\n            \"v\": {\n                \"volume\": 41697.282946,\n                \"lp_time\": 1633525996,\n                \"lp\": 54242.58,\n                \"chp\": 5.38,\n                \"ch\": 2770.59\n            }\n        }\n    ]\n},\n{\n    \"m\": \"qsd\",\n    \"p\": [\n        \"qs_ElZnWZOkhsUK\",\n        {\n            \"n\": \"BINANCE:BTCUSDT\",\n            \"s\": \"ok\",\n            \"v\": {\n                \"volume\": 41697.282946,\n                \"lp_time\": 1633525996,\n                \"lp\": 54242.58,\n                \"chp\": 5.38,\n                \"ch\": 2770.59\n            }\n        }\n    ]\n},\n{\n    \"m\": \"qsd\",\n    \"p\": [\n        \"qs_SjG4QQWzFJCn\",\n        {\n            \"n\": \"FX:USDJPY\",\n            \"s\": \"ok\",\n            \"v\": {\n                \"volume\": 163767,\n                \"lp_time\": 1633525996,\n                \"lp\": 111.357,\n                \"chp\": -0.08,\n                \"ch\": -0.092\n            }\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "wss://data.tradingview.com/socket.io/websocket?from=markets%2F&date=2021_10_01-14_36",
+					"protocol": "wss",
+					"host": [
+						"data",
+						"tradingview",
+						"com"
+					],
+					"path": [
+						"socket.io",
+						"websocket"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "markets%2F"
+						},
+						{
+							"key": "date",
+							"value": "2021_10_01-14_36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tech analysis oscillators",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "scanner.tradingview.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.tradingview.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.tradingview.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1718203896.1639489587; __gads=ID=0329bb3f169feeef:T=1639489596:S=ALNI_MbQmsnSoi_dYYLC3H-Jq_xskCCCoA; _sp_ses.cf1a=*; _gid=GA1.2.1819360520.1642921673; device_t=dTN1MkFROjA.Owvfi4fXc_REdY2TI2xDbzYBfnqih_x8S482Bu1xm3M; sessionid=qorvvfb571trxl0913eersgd62c4scdm; etg=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; cachec=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; png=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; tv_ecuid=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; _gat_gtag_UA_24278967_1=1; _sp_id.cf1a=332cce63-96e3-4f64-88ad-6e8e8e55d2b4.1639489586.3.1642925045.1639555039.e56e430c-cae7-4e6c-981d-dcb99b3a4465"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbols\": {\n        \"tickers\": [\n            \"BINANCE:BTCUSDT\"\n        ],\n        \"query\": {\n            \"types\": []\n        }\n    },\n    \"columns\": [\n        \"Recommend.Other|30\",\n        \"Recommend.All|30\",\n        \"Recommend.MA|30\",\n        \"RSI|30\",\n        \"Stoch.K|30\",\n        \"CCI20|30\",\n        \"ADX|30\",\n        \"AO|30\",\n        \"Mom|30\",\n        \"MACD.macd|30\",\n        \"Stoch.RSI.K|30\",\n        \"W.R|30\",\n        \"BBPower|30\",\n        \"UO|30\"\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://scanner.tradingview.com/crypto/scan",
+					"protocol": "https",
+					"host": [
+						"scanner",
+						"tradingview",
+						"com"
+					],
+					"path": [
+						"crypto",
+						"scan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tech analysis pivotes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "scanner.tradingview.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.tradingview.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.tradingview.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1718203896.1639489587; __gads=ID=0329bb3f169feeef:T=1639489596:S=ALNI_MbQmsnSoi_dYYLC3H-Jq_xskCCCoA; _gid=GA1.2.1819360520.1642921673; device_t=dTN1MkFROjA.Owvfi4fXc_REdY2TI2xDbzYBfnqih_x8S482Bu1xm3M; sessionid=qorvvfb571trxl0913eersgd62c4scdm; etg=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; cachec=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; png=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; tv_ecuid=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; _sp_ses.cf1a=*; _sp_id.cf1a=332cce63-96e3-4f64-88ad-6e8e8e55d2b4.1639489586.5.1642932690.1642930318.bd0db1c3-1d35-4c1b-9ae0-7dda0a4c5fc7"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbols\": {\n        \"tickers\": [\n            \"BINANCE:BTCUSDT\"\n        ],\n        \"query\": {\n            \"types\": []\n        }\n    },\n    \"columns\": [\n        \"Pivot.M.Classic.S3|30\",\n        \"Pivot.M.Classic.S2|30\",\n        \"Pivot.M.Classic.S1|30\",\n        \"Pivot.M.Classic.Middle|30\",\n        \"Pivot.M.Classic.R1|30\",\n        \"Pivot.M.Classic.R2|30\",\n        \"Pivot.M.Classic.R3|30\",\n        \"Pivot.M.Fibonacci.S3|30\",\n        \"Pivot.M.Fibonacci.S2|30\",\n        \"Pivot.M.Fibonacci.S1|30\",\n        \"Pivot.M.Fibonacci.Middle|30\",\n        \"Pivot.M.Fibonacci.R1|30\",\n        \"Pivot.M.Fibonacci.R2|30\",\n        \"Pivot.M.Fibonacci.R3|30\",\n        \"Pivot.M.Camarilla.S3|30\",\n        \"Pivot.M.Camarilla.S2|30\",\n        \"Pivot.M.Camarilla.S1|30\",\n        \"Pivot.M.Camarilla.Middle|30\",\n        \"Pivot.M.Camarilla.R1|30\",\n        \"Pivot.M.Camarilla.R2|30\",\n        \"Pivot.M.Camarilla.R3|30\",\n        \"Pivot.M.Woodie.S3|30\",\n        \"Pivot.M.Woodie.S2|30\",\n        \"Pivot.M.Woodie.S1|30\",\n        \"Pivot.M.Woodie.Middle|30\",\n        \"Pivot.M.Woodie.R1|30\",\n        \"Pivot.M.Woodie.R2|30\",\n        \"Pivot.M.Woodie.R3|30\",\n        \"Pivot.M.Demark.S1|30\",\n        \"Pivot.M.Demark.Middle|30\",\n        \"Pivot.M.Demark.R1|30\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://scanner.tradingview.com/crypto/scan",
+					"protocol": "https",
+					"host": [
+						"scanner",
+						"tradingview",
+						"com"
+					],
+					"path": [
+						"crypto",
+						"scan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tech analysis moving average",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "scanner.tradingview.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not;A Brand\";v=\"99\", \"Google Chrome\";v=\"97\", \"Chromium\";v=\"97\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "origin",
+						"value": "https://www.tradingview.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.tradingview.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1718203896.1639489587; __gads=ID=0329bb3f169feeef:T=1639489596:S=ALNI_MbQmsnSoi_dYYLC3H-Jq_xskCCCoA; _sp_ses.cf1a=*; _gid=GA1.2.1819360520.1642921673; device_t=dTN1MkFROjA.Owvfi4fXc_REdY2TI2xDbzYBfnqih_x8S482Bu1xm3M; sessionid=qorvvfb571trxl0913eersgd62c4scdm; etg=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; cachec=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; png=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; tv_ecuid=5c7d45ff-d715-42f5-9fab-b5c5e0f32a80; _sp_id.cf1a=332cce63-96e3-4f64-88ad-6e8e8e55d2b4.1639489586.3.1642923572.1639555039.e56e430c-cae7-4e6c-981d-dcb99b3a4465"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"symbols\": {\n        \"tickers\": [\n            \"BINANCE:BTCUSDT\"\n        ],\n        \"query\": {\n            \"types\": []\n        }\n    },\n    \"columns\": [\n        \"EMA10|1\",\n        \"SMA10|1\",\n        \"EMA20|1\",\n        \"SMA20|1\",\n        \"EMA30|1\",\n        \"SMA30|1\",\n        \"EMA50|1\",\n        \"SMA50|1\",\n        \"EMA100|1\",\n        \"SMA100|1\",\n        \"EMA200|1\",\n        \"SMA200|1\",\n        \"Ichimoku.BLine|1\",\n        \"VWMA|1\",\n        \"HullMA9|1\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://scanner.tradingview.com/crypto/scan",
+					"protocol": "https",
+					"host": [
+						"scanner",
+						"tradingview",
+						"com"
+					],
+					"path": [
+						"crypto",
+						"scan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

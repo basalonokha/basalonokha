@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "dfee8186-d136-44fc-a900-c9e9d0632d17",
+		"name": "alternative.me",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fear and greed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "alternative.me"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://alternative.me"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://alternative.me/crypto/fear-and-greed-index/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.496338188.1638100854; _gid=GA1.2.1820814339.1638100854; __gads=ID=671b3a6760288bf6-225e843d0ccc002e:T=1638100854:RT=1638100854:S=ALNI_MZzSW3fCA75OC-gW8CioaBwNIbTWg; dancer.session=CDssBsaLPCbtcHhQ0b43A_RxfmiVRtvs8LVw7yp6bP0~1669639723~tppgFNhbqndGjfSIrOGdpA~0i991rAa_BC1e027zukADdR_sGnsSXcX1CE5shkvLFc~2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"days\":30}"
+				},
+				"url": {
+					"raw": "https://alternative.me/api/crypto/fear-and-greed-index/history",
+					"protocol": "https",
+					"host": [
+						"alternative",
+						"me"
+					],
+					"path": [
+						"api",
+						"crypto",
+						"fear-and-greed-index",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.alternative.me/fng/?limit=10000&format=json&date_format=us",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.alternative.me/fng/?limit=10000&format=json&date_format=us",
+					"protocol": "https",
+					"host": [
+						"api",
+						"alternative",
+						"me"
+					],
+					"path": [
+						"fng",
+						""
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10000"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "date_format",
+							"value": "us"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

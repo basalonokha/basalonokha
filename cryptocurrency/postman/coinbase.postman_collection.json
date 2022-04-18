@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "261e3d6d-4199-4923-80b4-e5d62586d617",
+		"name": "coinbase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.coinbase.com/api/v2/assets/search?base=EUR&country=FR&filter=all&include_prices=true&limit=30&order=asc&page=1&query=&resolution=day&sort=rank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "X-CB-Platform",
+						"value": "web"
+					},
+					{
+						"key": "credentials",
+						"value": "same-origin"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "X-CB-Session-UUID",
+						"value": "c4c863d4-b59b-4287-9282-5bb879503276"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.coinbase.com/price"
+					},
+					{
+						"key": "X-CB-Pagekey",
+						"value": "price"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://www.coinbase.com/api/v2/assets/search?base=EUR&country=FR&filter=all&include_prices=true&limit=30&order=asc&page=1&query=&resolution=day&sort=rank",
+					"protocol": "https",
+					"host": [
+						"www",
+						"coinbase",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"assets",
+						"search"
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "EUR"
+						},
+						{
+							"key": "country",
+							"value": "FR"
+						},
+						{
+							"key": "filter",
+							"value": "all"
+						},
+						{
+							"key": "include_prices",
+							"value": "true"
+						},
+						{
+							"key": "limit",
+							"value": "30"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "query",
+							"value": ""
+						},
+						{
+							"key": "resolution",
+							"value": "day"
+						},
+						{
+							"key": "sort",
+							"value": "rank"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.coinbase.com/api/v2/assets/search?base=EUR&country=FR&filter=listed&include_prices=true&limit=30&order=asc&page=1&query=&resolution=day&sort=rank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "X-CB-Platform",
+						"value": "web"
+					},
+					{
+						"key": "credentials",
+						"value": "same-origin"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "X-CB-Session-UUID",
+						"value": "c4c863d4-b59b-4287-9282-5bb879503276"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.coinbase.com/price/s/listed"
+					},
+					{
+						"key": "X-CB-Pagekey",
+						"value": "price"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://www.coinbase.com/api/v2/assets/search?base=EUR&country=FR&filter=listed&include_prices=true&limit=30&order=asc&page=1&query=&resolution=day&sort=rank",
+					"protocol": "https",
+					"host": [
+						"www",
+						"coinbase",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"assets",
+						"search"
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "EUR"
+						},
+						{
+							"key": "country",
+							"value": "FR"
+						},
+						{
+							"key": "filter",
+							"value": "listed"
+						},
+						{
+							"key": "include_prices",
+							"value": "true"
+						},
+						{
+							"key": "limit",
+							"value": "30"
+						},
+						{
+							"key": "order",
+							"value": "asc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "query",
+							"value": ""
+						},
+						{
+							"key": "resolution",
+							"value": "day"
+						},
+						{
+							"key": "sort",
+							"value": "rank"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hist_dominance_marketcap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://web-api.coinmarketcap.com/v1.1/cryptocurrency/quotes/historical?aux=search_interval,market_cap&format=chart&id=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18&include_global=true&interval=5m",
+					"protocol": "https",
+					"host": [
+						"web-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1.1",
+						"cryptocurrency",
+						"quotes",
+						"historical"
+					],
+					"query": [
+						{
+							"key": "aux",
+							"value": "search_interval,market_cap"
+						},
+						{
+							"key": "format",
+							"value": "chart"
+						},
+						{
+							"key": "id",
+							"value": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18"
+						},
+						{
+							"key": "include_global",
+							"value": "true"
+						},
+						{
+							"key": "interval",
+							"value": "5m"
+						},
+						{
+							"key": "time_end",
+							"value": "1641119519000",
+							"disabled": true
+						},
+						{
+							"key": "time_start",
+							"value": "1641115917000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

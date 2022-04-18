@@ -1,0 +1,2380 @@
+{
+	"info": {
+		"_postman_id": "bfca192c-d6e4-4de8-ba83-da336d30a623",
+		"name": "twitter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "token",
+			"item": [
+				{
+					"name": "get token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/yamahdi0009"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3077963da99a070be2e7be1440cc2995"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "content-type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/guest/activate.json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"guest",
+								"activate.json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+									},
+									{
+										"key": "Referer",
+										"value": "https://twitter.com/yamahdi0009"
+									},
+									{
+										"key": "x-twitter-client-language",
+										"value": "en"
+									},
+									{
+										"key": "x-csrf-token",
+										"value": "3077963da99a070be2e7be1440cc2995"
+									},
+									{
+										"key": "x-twitter-active-user",
+										"value": "yes"
+									},
+									{
+										"key": "authorization",
+										"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+									},
+									{
+										"key": "content-type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"url": {
+									"raw": "https://api.twitter.com/1.1/guest/activate.json",
+									"protocol": "https",
+									"host": [
+										"api",
+										"twitter",
+										"com"
+									],
+									"path": [
+										"1.1",
+										"guest",
+										"activate.json"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tweet",
+			"item": [
+				{
+					"name": "get tweet v1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "api.twitter.com"
+							},
+							{
+								"key": "pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-cache"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3100b3ef30b67cce408df696863d88ae"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1272520156405796864"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://twitter.com"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/search?q=%23%DA%A9%D8%B1%D9%88%D9%86%D8%A7&src=typed_query&f=live"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "personalization_id=\"v1_czHbm901tbtH6gI+PkOvdg==\"; guest_id=v1%3A159100353779504279; gt=1267386813125210117; ct0=3100b3ef30b67cce408df696863d88ae; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCGVmM29yAToMY3NyZl9p%250AZCIlNWY1MzRhNWNhOGE5MmFiMWM1MDA1OGY5MTU0ZjBlMWQ6B2lkIiUyMzJi%250AMzg4YTgyYWI3NWIxNzkxMTY2Zjk4ZGMxMjMyYQ%253D%253D--c158c1205c1a407cb72070bcd3c51c525450c466; _ga=GA1.2.1494401588.1591003541; _gid=GA1.2.801190804.1591003541"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/statuses/show.json?simple_quoted_tweet=true&include_entities=true&tweet_mode=extended&include_cards=1&id=947040208536657921",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"statuses",
+								"show.json"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "1267488909266522112",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "1267488413835497473",
+									"disabled": true
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_rts",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "id",
+									"value": "947040208536657921"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tweet v2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/BahareMaeguli/status/1268767621593382912"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "8157109cfaeca14c1b1895afe5c8801f"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1276900959239712768"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/2/timeline/conversation/1274815871656042497.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&count=20&ext=mediaStats%2ChighlightedLabel%2CcameraMoment&include_quote_count=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"2",
+								"timeline",
+								"conversation",
+								"1274815871656042497.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "count",
+									"value": "20"
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel%2CcameraMoment"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search v1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "api.twitter.com"
+							},
+							{
+								"key": "pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-cache"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3100b3ef30b67cce408df696863d88ae"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1274697338855084032"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36",
+								"disabled": true
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://twitter.com"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/search?q=%23%DA%A9%D8%B1%D9%88%D9%86%D8%A7&src=typed_query&f=live"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "personalization_id=\"v1_czHbm901tbtH6gI+PkOvdg==\"; guest_id=v1%3A159100353779504279; gt=1267386813125210117; ct0=3100b3ef30b67cce408df696863d88ae; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCGVmM29yAToMY3NyZl9p%250AZCIlNWY1MzRhNWNhOGE5MmFiMWM1MDA1OGY5MTU0ZjBlMWQ6B2lkIiUyMzJi%250AMzg4YTgyYWI3NWIxNzkxMTY2Zjk4ZGMxMjMyYQ%253D%253D--c158c1205c1a407cb72070bcd3c51c525450c466; _ga=GA1.2.1494401588.1591003541; _gid=GA1.2.801190804.1591003541",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/search/tweets.json?tweet_mode=extended&include_entities=true&q=%23%D9%87%D9%85%D9%87&count=100&result_type=recent&exclude_replies=false&max_id=1273913042712092672",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"search",
+								"tweets.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_blocking",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "skip_status",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12",
+									"disabled": true
+								},
+								{
+									"key": "include_cards",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "q",
+									"value": "%23%D9%87%D9%85%D9%87"
+								},
+								{
+									"key": "count",
+									"value": "100"
+								},
+								{
+									"key": "query_source",
+									"value": "typed_query",
+									"disabled": true
+								},
+								{
+									"key": "pc",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "spelling_corrections",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel%2CcameraMoment",
+									"disabled": true
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true",
+									"disabled": true
+								},
+								{
+									"key": "extended_tweet",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "result_type",
+									"value": "recent"
+								},
+								{
+									"key": "exclude_replies",
+									"value": "false"
+								},
+								{
+									"key": "max_id",
+									"value": "1273913042712092672"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search v2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/search?q=%23crona&src=typed_query"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "c7f289a3b04fb32db336d0c60e4d56af"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1275006187025637376"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/2/search/adaptive.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&q=%23%D8%A8%D9%87%D8%A7%D9%86%D9%87_%D8%B9%D8%A7%D8%B4%D9%82%DB%8C&count=100&query_source=typed_query&pc=1&spelling_corrections=1&ext=mediaStats%2ChighlightedLabel%2CcameraMoment&include_quote_count=true&tweet_search_mode=live",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"2",
+								"search",
+								"adaptive.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "q",
+									"value": "%23%D8%A8%D9%87%D8%A7%D9%86%D9%87_%D8%B9%D8%A7%D8%B4%D9%82%DB%8C"
+								},
+								{
+									"key": "count",
+									"value": "100"
+								},
+								{
+									"key": "query_source",
+									"value": "typed_query"
+								},
+								{
+									"key": "pc",
+									"value": "1"
+								},
+								{
+									"key": "spelling_corrections",
+									"value": "1"
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel%2CcameraMoment"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								},
+								{
+									"key": "tweet_search_mode",
+									"value": "live"
+								},
+								{
+									"key": "include_available_features",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my time line",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "api.twitter.com"
+							},
+							{
+								"key": "pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-cache"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "1320d4fbd12083d96596ea23f7602b4b"
+							},
+							{
+								"key": "x-twitter-auth-type",
+								"value": "OAuth2Session"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "origin",
+								"value": "https://twitter.com"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/mitraaa77"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.2.754490136.1542443945; kdt=v1xgud6SBcdeZ9u0RqBp0Z2ldLOFsmvlLu66EzWm; __utma=43838368.754490136.1542443945.1550909231.1550909231.1; eu_cn=1; tfw_exp=0; _gid=GA1.2.1161411659.1591418735; personalization_id=\"v1_uO0ksTRCbgwj1XcKMf26bg==\"; guest_id=v1%3A159144153201125602; ct0=1320d4fbd12083d96596ea23f7602b4b; gt=1269226630247067649; ads_prefs=\"HBERAAA=\"; remember_checked_on=1; _twitter_sess=BAh7CiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCCCpTolyAToMY3NyZl9p%250AZCIlZjEwZTAyZTZkYWVmYmQ3N2Y5MTg3ZWM1ODZhZmZjZjY6B2lkIiVkYTE0%250ANGVhMjkzYTg3MjgzNTk4OWNlZGIxYjlmNTIyMToJdXNlcmwrCQCw19EoOosR--83c3e10e3bad2ed063e1858ef4467a09da7f50c6; auth_token=508b000b58f84452371ac4d2aacafd2be6102224; twid=u%3D1264168067401232384"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/2/timeline/home.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&earned=1&count=20&include_quote_count=true&lca=true&ext=mediaStats%2ChighlightedLabel%2CcameraMoment&include_quote_count=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"2",
+								"timeline",
+								"home.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "earned",
+									"value": "1"
+								},
+								{
+									"key": "count",
+									"value": "20"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								},
+								{
+									"key": "lca",
+									"value": "true"
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel%2CcameraMoment"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user tweets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/realDonaldTrump"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3077963da99a070be2e7be1440cc2995"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1276900959239712768"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/2/timeline/profile/2437973553.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&include_tweet_replies=false&userId=2437973553&count=100&ext=mediaStats%2ChighlightedLabel%2CcameraMoment&include_quote_count=true",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"2",
+								"timeline",
+								"profile",
+								"2437973553.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "include_tweet_replies",
+									"value": "false"
+								},
+								{
+									"key": "userId",
+									"value": "2437973553"
+								},
+								{
+									"key": "count",
+									"value": "100"
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel%2CcameraMoment"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users that liked",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "api.twitter.com"
+							},
+							{
+								"key": "pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-cache"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3100b3ef30b67cce408df696863d88ae"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1360542799729418241"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://twitter.com"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/search?q=%23%DA%A9%D8%B1%D9%88%D9%86%D8%A7&src=typed_query&f=live"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br",
+								"disabled": true
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "personalization_id=\"v1_czHbm901tbtH6gI+PkOvdg==\"; guest_id=v1%3A159100353779504279; gt=1267386813125210117; ct0=3100b3ef30b67cce408df696863d88ae; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCGVmM29yAToMY3NyZl9p%250AZCIlNWY1MzRhNWNhOGE5MmFiMWM1MDA1OGY5MTU0ZjBlMWQ6B2lkIiUyMzJi%250AMzg4YTgyYWI3NWIxNzkxMTY2Zjk4ZGMxMjMyYQ%253D%253D--c158c1205c1a407cb72070bcd3c51c525450c466; _ga=GA1.2.1494401588.1591003541; _gid=GA1.2.801190804.1591003541"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/favorites/list.json?user_id=932284407188246528&count=10",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"favorites",
+								"list.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "932284407188246528"
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hidden reply",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "twitter.com"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "e6ca69b3cbd9121451b41f19543a1e5c"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1392056864477794306"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/ArvanCloud_fa/status/1390290992910278658/hidden"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.2.338875265.1618994942; personalization_id=\"v1_ouwjFzPTMXU3n4SfPcTa2w==\"; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJuU1gJ5AToMY3NyZl9p%250AZCIlZDIzNGJmOGMyNWQ1OTk1MjAwNmNlMjczNGU2MDkxNDA6B2lkIiUwMjI0%250ANzA0ODc5ZDM4NjZiYTFlM2FhNTc5Njg1MDNjNQ%253D%253D--9f0d5f771e51d8d909438adf8045abfe819915ae; guest_id=v1%3A161935489956834876; _gid=GA1.2.1537090652.1620656022; _sl=1; at_check=true; des_opt_in=Y; mbox=session#abf47077cc3248368f0ca2bf6ad005a0#1620659389|PC#abf47077cc3248368f0ca2bf6ad005a0.37_0#1683902518; ct0=e6ca69b3cbd9121451b41f19543a1e5c; gt=1392056864477794306"
+							}
+						],
+						"url": {
+							"raw": "https://twitter.com/i/api/2/timeline/hidden.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_quote_count=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&count=20&conversation_id=1390290992910278658&ext=mediaStats%2ChighlightedLabel",
+							"protocol": "https",
+							"host": [
+								"twitter",
+								"com"
+							],
+							"path": [
+								"i",
+								"api",
+								"2",
+								"timeline",
+								"hidden.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "count",
+									"value": "20"
+								},
+								{
+									"key": "conversation_id",
+									"value": "1390290992910278658"
+								},
+								{
+									"key": "ext",
+									"value": "mediaStats%2ChighlightedLabel"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "get by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1352886047013797888"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.twitter.com/1.1/users/show.json?user_id=17248958",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"users",
+								"show.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "17248958"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1330994755149422594"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/users/lookup.json?screen_name=mohades70,YaseZahraa6,PakfetratAli,daryadarshi,Majid_69s,Reza_Darayee,ebrahimbameri,m_keikha,farvardin075\n9,milad199119,NikooShahed,1373Msd,parsaaa_ir,moh_mostafa_m,Mohammad_mo32,sardare_delha1,AmirMahdi_313,Mehran_jann,hejabpix\n,SMEkhteraei&include_entities=true&user_id=25073877,1016248133435748352",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"users",
+								"lookup.json"
+							],
+							"query": [
+								{
+									"key": "screen_name",
+									"value": "mohades70,YaseZahraa6,PakfetratAli,daryadarshi,Majid_69s,Reza_Darayee,ebrahimbameri,m_keikha,farvardin075\n9,milad199119,NikooShahed,1373Msd,parsaaa_ir,moh_mostafa_m,Mohammad_mo32,sardare_delha1,AmirMahdi_313,Mehran_jann,hejabpix\n,SMEkhteraei"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "user_id",
+									"value": "25073877,1016248133435748352"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id graphql",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "twitter.com"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "751b8dac7d1dab1f70119f081c8501d5"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1392425552951357445"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/i/user/50988711"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.2.338875265.1618994942; personalization_id=\"v1_ouwjFzPTMXU3n4SfPcTa2w==\"; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJuU1gJ5AToMY3NyZl9p%250AZCIlZDIzNGJmOGMyNWQ1OTk1MjAwNmNlMjczNGU2MDkxNDA6B2lkIiUwMjI0%250ANzA0ODc5ZDM4NjZiYTFlM2FhNTc5Njg1MDNjNQ%253D%253D--9f0d5f771e51d8d909438adf8045abfe819915ae; guest_id=v1%3A161935489956834876; _gid=GA1.2.1537090652.1620656022; at_check=true; des_opt_in=Y; ct0=751b8dac7d1dab1f70119f081c8501d5; _sl=1; att=1-yjegX6u5GRRDvoLIB0cviZFYhFAAB2NO4IeVYKG7; external_referer=padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D; gt=1392425552951357448; mbox=PC#abf47077cc3248368f0ca2bf6ad005a0.37_0#1684056340|session#ecb175a70b32496b81233c0a567870ab#1620817091"
+							}
+						],
+						"url": {
+							"raw": "https://twitter.com/i/api/graphql/WN6Hck-Pwm-YP0uxVj1oMQ/UserByRestIdWithoutResults?variables=%7B%22userId%22%3A%221227288414631923712%22%2C%22withHighlightedLabel%22%3Atrue%7D",
+							"protocol": "https",
+							"host": [
+								"twitter",
+								"com"
+							],
+							"path": [
+								"i",
+								"api",
+								"graphql",
+								"WN6Hck-Pwm-YP0uxVj1oMQ",
+								"UserByRestIdWithoutResults"
+							],
+							"query": [
+								{
+									"key": "variables",
+									"value": "%7B%22userId%22%3A%221227288414631923712%22%2C%22withHighlightedLabel%22%3Atrue%7D"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by screen name graphql",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "twitter.com"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"90\", \"Google Chrome\";v=\"90\""
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "751b8dac7d1dab1f70119f081c8501d5"
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1392423764298772481"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/illnews"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.2.338875265.1618994942; personalization_id=\"v1_ouwjFzPTMXU3n4SfPcTa2w==\"; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCJuU1gJ5AToMY3NyZl9p%250AZCIlZDIzNGJmOGMyNWQ1OTk1MjAwNmNlMjczNGU2MDkxNDA6B2lkIiUwMjI0%250ANzA0ODc5ZDM4NjZiYTFlM2FhNTc5Njg1MDNjNQ%253D%253D--9f0d5f771e51d8d909438adf8045abfe819915ae; guest_id=v1%3A161935489956834876; _gid=GA1.2.1537090652.1620656022; at_check=true; des_opt_in=Y; ct0=751b8dac7d1dab1f70119f081c8501d5; gt=1392372759162933248; _sl=1; mbox=PC#abf47077cc3248368f0ca2bf6ad005a0.37_0#1684053039|session#f38a2ac00d1f4da2bcac6ac01d4fe898#1620810054; att=1-yjegX6u5GRRDvoLIB0cviZFYhFAAB2NO4IeVYKG7"
+							}
+						],
+						"url": {
+							"raw": "https://twitter.com/i/api/graphql/Vf8si2dfZ1zmah8ePYPjDQ/UserByScreenNameWithoutResults?variables=%7B%22screen_name%22%3A%22March64626860Ch%22%2C%22withHighlightedLabel%22%3Atrue%7D",
+							"protocol": "https",
+							"host": [
+								"twitter",
+								"com"
+							],
+							"path": [
+								"i",
+								"api",
+								"graphql",
+								"Vf8si2dfZ1zmah8ePYPjDQ",
+								"UserByScreenNameWithoutResults"
+							],
+							"query": [
+								{
+									"key": "variables",
+									"value": "%7B%22screen_name%22%3A%22March64626860Ch%22%2C%22withHighlightedLabel%22%3Atrue%7D"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "follower-following",
+			"item": [
+				{
+					"name": "followers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "mobile.twitter.com/yamahdi0009/followers",
+							"host": [
+								"mobile",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"yamahdi0009",
+								"followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "following",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "mobile.twitter.com/yamahdi0009/followings",
+							"host": [
+								"mobile",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"yamahdi0009",
+								"followings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "follower ids",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1392375937346457600"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/followers/ids.json?user_id=25073877",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"followers",
+								"ids.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "25073877"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "following ids",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1330994755149422594"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/friends/ids.json?user_id=25073877",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"friends",
+								"ids.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "25073877"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "followers list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1330994755149422594"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/followers/list.json?user_id=25073877",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"followers",
+								"list.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "25073877"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "followings list",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1331953637472530433"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/friends/list.json?user_id=1312144006311272448&count=20&cursor=1679477852109402129",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"friends",
+								"list.json"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1312144006311272448"
+								},
+								{
+									"key": "count",
+									"value": "20"
+								},
+								{
+									"key": "cursor",
+									"value": "1679477852109402129"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "location",
+			"item": [
+				{
+					"name": "get trends",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1332130562220363779"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/trends/place.json?id=1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"trends",
+								"place.json"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "available woeid",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "https://twitter.com/N12news"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "fa"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "424444b6edb80d7a818964852bbd4417"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1332130562220363779"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/trends/available.json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"trends",
+								"available.json"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "moment",
+			"item": [
+				{
+					"name": "get user moments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authority",
+								"value": "api.twitter.com"
+							},
+							{
+								"key": "pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "cache-control",
+								"value": "no-cache"
+							},
+							{
+								"key": "authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+							},
+							{
+								"key": "x-twitter-client-language",
+								"value": "en"
+							},
+							{
+								"key": "x-csrf-token",
+								"value": "3100b3ef30b67cce408df696863d88ae"
+							},
+							{
+								"key": "x-guest-token",
+								"value": "1412420366853627904"
+							},
+							{
+								"key": "x-twitter-active-user",
+								"value": "yes"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+							},
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "origin",
+								"value": "https://twitter.com"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-site"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "referer",
+								"value": "https://twitter.com/search?q=%23%DA%A9%D8%B1%D9%88%D9%86%D8%A7&src=typed_query&f=live"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9,fa;q=0.8"
+							},
+							{
+								"key": "cookie",
+								"value": "personalization_id=\"v1_czHbm901tbtH6gI+PkOvdg==\"; guest_id=v1%3A159100353779504279; gt=1267386813125210117; ct0=3100b3ef30b67cce408df696863d88ae; _twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCGVmM29yAToMY3NyZl9p%250AZCIlNWY1MzRhNWNhOGE5MmFiMWM1MDA1OGY5MTU0ZjBlMWQ6B2lkIiUyMzJi%250AMzg4YTgyYWI3NWIxNzkxMTY2Zjk4ZGMxMjMyYQ%253D%253D--c158c1205c1a407cb72070bcd3c51c525450c466; _ga=GA1.2.1494401588.1591003541; _gid=GA1.2.801190804.1591003541"
+							}
+						],
+						"url": {
+							"raw": "https://twitter.com/i/api/2/moments/list_user_moments.json?include_profile_interstitial_type=1&include_blocking=1&include_blocked_by=1&include_followed_by=1&include_want_retweets=1&include_mute_edge=1&include_can_dm=1&include_can_media_tag=1&skip_status=1&cards_platform=Web-12&include_cards=1&include_ext_alt_text=true&include_quote_count=true&include_reply_count=1&tweet_mode=extended&include_entities=true&include_user_entities=true&include_ext_media_color=true&include_ext_media_availability=true&send_error_codes=true&simple_quoted_tweet=true&count=20&cursor=1563471089250&userId=1065658304884547585&include_capsule_contents=false",
+							"protocol": "https",
+							"host": [
+								"twitter",
+								"com"
+							],
+							"path": [
+								"i",
+								"api",
+								"2",
+								"moments",
+								"list_user_moments.json"
+							],
+							"query": [
+								{
+									"key": "include_profile_interstitial_type",
+									"value": "1"
+								},
+								{
+									"key": "include_blocking",
+									"value": "1"
+								},
+								{
+									"key": "include_blocked_by",
+									"value": "1"
+								},
+								{
+									"key": "include_followed_by",
+									"value": "1"
+								},
+								{
+									"key": "include_want_retweets",
+									"value": "1"
+								},
+								{
+									"key": "include_mute_edge",
+									"value": "1"
+								},
+								{
+									"key": "include_can_dm",
+									"value": "1"
+								},
+								{
+									"key": "include_can_media_tag",
+									"value": "1"
+								},
+								{
+									"key": "skip_status",
+									"value": "1"
+								},
+								{
+									"key": "cards_platform",
+									"value": "Web-12"
+								},
+								{
+									"key": "include_cards",
+									"value": "1"
+								},
+								{
+									"key": "include_ext_alt_text",
+									"value": "true"
+								},
+								{
+									"key": "include_quote_count",
+									"value": "true"
+								},
+								{
+									"key": "include_reply_count",
+									"value": "1"
+								},
+								{
+									"key": "tweet_mode",
+									"value": "extended"
+								},
+								{
+									"key": "include_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_user_entities",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_color",
+									"value": "true"
+								},
+								{
+									"key": "include_ext_media_availability",
+									"value": "true"
+								},
+								{
+									"key": "send_error_codes",
+									"value": "true"
+								},
+								{
+									"key": "simple_quoted_tweet",
+									"value": "true"
+								},
+								{
+									"key": "count",
+									"value": "20"
+								},
+								{
+									"key": "cursor",
+									"value": "1563471089250"
+								},
+								{
+									"key": "userId",
+									"value": "1065658304884547585"
+								},
+								{
+									"key": "include_capsule_contents",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

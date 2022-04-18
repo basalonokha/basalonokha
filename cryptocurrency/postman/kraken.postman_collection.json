@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "14b3761a-1816-497d-994b-a5efcc953e25",
+		"name": "kraken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.kraken.com/api/internal/cryptowatch/markets/assets?asset=EUR&limit=100&assetName=new",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.kraken.com/prices?quote=EUR"
+					},
+					{
+						"key": "X-Kraken-Asset-Name",
+						"value": "new"
+					},
+					{
+						"key": "X-KOrigin",
+						"value": "4081"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHTTPRequest"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					}
+				],
+				"url": {
+					"raw": "https://www.kraken.com/api/internal/cryptowatch/markets/assets?asset=EUR&limit=100&assetName=new",
+					"protocol": "https",
+					"host": [
+						"www",
+						"kraken",
+						"com"
+					],
+					"path": [
+						"api",
+						"internal",
+						"cryptowatch",
+						"markets",
+						"assets"
+					],
+					"query": [
+						{
+							"key": "asset",
+							"value": "EUR"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "assetName",
+							"value": "new"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.kraken.com/api/internal/meta",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.kraken.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.kraken.com/prices?quote=EUR"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "__cf_bm=cPdCMfgvn1O.UNQWXs9v3InevA02oaseNu8OmsFQ5BA-1633185743-0-AR5RqJxtJPLCNtx2+SdcJ1CsVGHspixjSxWGnGEH+ltbsJTqoercPSuMa2gj4uFCcuHoe1Hczg/ddbp3rsGDfz8=; __cfruid=1b59b518554ab6337d75c96f8ba968382f61c315-1633185743; _rdt_uuid=1633185750712.685c5775-6af3-4411-a794-b5fb0d9242af; cf_chl_prog=a11; cf_clearance=oaB5qfnTICNKZKDFQYt0Xc.u38xRjE8cgnwx9JjouSE-1633185767-0-150; _ga=GA1.2.1863492723.1633185777; _gid=GA1.2.1547991340.1633185777; _gat=1; __ssid=740625287e022da3cd7ce58bfc5e4f2; _gcl_au=1.1.860532069.1633185780; _uetsid=f8bf5bc0238e11eca7f925642dcb1c66; _uetvid=f8bfa5c0238e11ec95eb31e8465eefa3"
+					}
+				],
+				"url": {
+					"raw": "https://www.kraken.com/api/internal/meta",
+					"protocol": "https",
+					"host": [
+						"www",
+						"kraken",
+						"com"
+					],
+					"path": [
+						"api",
+						"internal",
+						"meta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

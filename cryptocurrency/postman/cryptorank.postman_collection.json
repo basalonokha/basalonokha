@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8e98ed36-34eb-4a72-b07a-34ca9b484ebf",
+		"name": "cryptorank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ws",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://cryptorank.io"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "UUpTuC63Kfi7/Mjp/yzI6Q=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://api.cryptorank.io/ws",
+					"protocol": "wss",
+					"host": [
+						"api",
+						"cryptorank",
+						"io"
+					],
+					"path": [
+						"ws"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "coin_detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.cryptorank.io"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "appication/json"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://cryptorank.io"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://cryptorank.io/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.cryptorank.io/v0/coins/bitcoin?locale=en",
+					"protocol": "https",
+					"host": [
+						"api",
+						"cryptorank",
+						"io"
+					],
+					"path": [
+						"v0",
+						"coins",
+						"bitcoin"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

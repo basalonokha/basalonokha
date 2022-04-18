@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "09d33f1e-73f9-47e3-9a39-ee4ae443ff27",
+		"name": "kucoin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "wss://ws-web.kucoin.com/socket.io/?token=2neAiuYvAU5cbMXpmsXD5OJlewXCKryg8dSpDCgag8ZwbZpn3uIHi0A1AOtpCibAwoXOiOG0Q0GkvDKO5tZWVglFHmpy27neLVQe_WgoeoZhzSCxV2uU2aqRyqznCVt1whuoNZhpWWHLlG1Psk6Vzudi286hbSOz.85S1-xL0CKJpdQYV6BpXOw%3D%3D&format=json&acceptUserMe",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.kucoin.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "5Ne5q+XCTB3XHd1ACEJE/A=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://ws-web.kucoin.com/socket.io/?token=2neAiuYvAU5cbMXpmsXD5OJlewXCKryg8dSpDCgag8ZwbZpn3uIHi0A1AOtpCibAwoXOiOG0Q0GkvDKO5tZWVglFHmpy27neLVQe_WgoeoZhzSCxV2uU2aqRyqznCVt1whuoNZhpWWHLlG1Psk6Vzudi286hbSOz.85S1-xL0CKJpdQYV6BpXOw%3D%3D&format=json&acceptUserMessage=false&connectId=connect_welcome&EIO=3&transport=websocket",
+					"protocol": "wss",
+					"host": [
+						"ws-web",
+						"kucoin",
+						"com"
+					],
+					"path": [
+						"socket.io",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "2neAiuYvAU5cbMXpmsXD5OJlewXCKryg8dSpDCgag8ZwbZpn3uIHi0A1AOtpCibAwoXOiOG0Q0GkvDKO5tZWVglFHmpy27neLVQe_WgoeoZhzSCxV2uU2aqRyqznCVt1whuoNZhpWWHLlG1Psk6Vzudi286hbSOz.85S1-xL0CKJpdQYV6BpXOw%3D%3D"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "acceptUserMessage",
+							"value": "false"
+						},
+						{
+							"key": "connectId",
+							"value": "connect_welcome"
+						},
+						{
+							"key": "EIO",
+							"value": "3"
+						},
+						{
+							"key": "transport",
+							"value": "websocket"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.kucoin.com/_api/currency/prices?base=USD&targets=&lang=en_US",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.kucoin.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.kucoin.com/markets"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "__cfruid=f63c5285a7496340e36a4556565f40d90646e336-1633177895; gr_user_id=5d01666a-1451-4154-8acf-806288cfa411; a46016b4ef684522_gr_session_id_8f9f1584-a999-444d-8921-07ce3de53771=false; a46016b4ef684522_gr_session_id=8f9f1584-a999-444d-8921-07ce3de53771; __cf_bm=ECMxXPGxdM6ZmuPhmRYkSoYZt2aIpFdcC1OeFhtIN7k-1633177899-0-Acy2v4+nmtUmVi9B8G1nIwN4mHMjRb7XzyCvVXUFbrpsd/IQp6eDxRyCQg9Y7lP5NPiDFHCKONyYUXgFZ8Bxn/PiBVN6FE5wVowUQXzfhIKbZ/hyPwWuWmAsP9tZjkYDAg==; _ga=GA1.2.979785266.1633177900; _gid=GA1.2.1981986558.1633177900; x-bullet-token=2neAiuYvAU5cbMXpmsXD5OJlewXCKryg8dSpDCgag8ZwbZpn3uIHi0A1AOtpCibAwoXOiOG0Q0GkvDKO5tZWVglFHmpy27neLVQe_WgoeoZhzSCxV2uU2aqRyqznCVt1whuoNZhpWWHLlG1Psk6Vzudi286hbSOz.85S1-xL0CKJpdQYV6BpXOw==; AWSALB=Js93P+GIqrsdQStxWMDhnXImH6iNzRiIP/5x9AdRV6hQ+VHaiTRouqq6xLsO1Tq5vElxIulP5Qp5Ohb8tstpPkbjOiM8YEa8QzjbG0Z1dLGkrpu+3+nyl1+0NJaa; AWSALBCORS=Js93P+GIqrsdQStxWMDhnXImH6iNzRiIP/5x9AdRV6hQ+VHaiTRouqq6xLsO1Tq5vElxIulP5Qp5Ohb8tstpPkbjOiM8YEa8QzjbG0Z1dLGkrpu+3+nyl1+0NJaa; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.kucoin.com/_api/currency/prices?base=USD&targets=&lang=en_US",
+					"protocol": "https",
+					"host": [
+						"www",
+						"kucoin",
+						"com"
+					],
+					"path": [
+						"_api",
+						"currency",
+						"prices"
+					],
+					"query": [
+						{
+							"key": "base",
+							"value": "USD"
+						},
+						{
+							"key": "targets",
+							"value": ""
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1233 @@
+{
+	"info": {
+		"_postman_id": "58dc3e35-e991-41b3-b3b1-c204a98ba749",
+		"name": "huobi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "common symbols",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "hb-api-version",
+						"value": "1.7"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/markets/?tab=exchange"
+					},
+					{
+						"key": "cookie",
+						"value": "sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; sajssdk_2015_cross_new_user=1; _ha_session=1633185001528; _ha_session_id=5639fdc4-9751-3814-9eae-9f663e90; _ga=GA1.2.1949000229.1633185003; _gid=GA1.2.795957542.1633185003; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/pro/v2/beta/common/symbols?r=g1n7j8&x-b3-traceid=e00a88f11020c5567bc6326e406af5c1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"pro",
+						"v2",
+						"beta",
+						"common",
+						"symbols"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "g1n7j8"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "e00a88f11020c5567bc6326e406af5c1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract contract info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/markets/?tab=exchange"
+					},
+					{
+						"key": "cookie",
+						"value": "sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; sajssdk_2015_cross_new_user=1; _ha_session=1633185001528; _ha_session_id=5639fdc4-9751-3814-9eae-9f663e90; _ga=GA1.2.1949000229.1633185003; _gid=GA1.2.795957542.1633185003; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/dm/v1/contract_contract_info?r=jfpdv&x-b3-traceid=fadbc03315fb21672ea37a071e4cccb7",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"dm",
+						"v1",
+						"contract_contract_info"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "jfpdv"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "fadbc03315fb21672ea37a071e4cccb7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swap_contract_info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/markets/?tab=exchange"
+					},
+					{
+						"key": "cookie",
+						"value": "sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; sajssdk_2015_cross_new_user=1; _ha_session=1633185001528; _ha_session_id=5639fdc4-9751-3814-9eae-9f663e90; _ga=GA1.2.1949000229.1633185003; _gid=GA1.2.795957542.1633185003; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/dm/swap/v1/swap_contract_info?r=qp061q&x-b3-traceid=40473587e3ae1e3c1b23a0b84182b42a",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"dm",
+						"swap",
+						"v1",
+						"swap_contract_info"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "qp061q"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "40473587e3ae1e3c1b23a0b84182b42a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linear_swap_contract_info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/markets/?tab=exchange"
+					},
+					{
+						"key": "cookie",
+						"value": "sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; sajssdk_2015_cross_new_user=1; _ha_session=1633185001528; _ha_session_id=5639fdc4-9751-3814-9eae-9f663e90; _ga=GA1.2.1949000229.1633185003; _gid=GA1.2.795957542.1633185003; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/dm/linear/v1/linear_swap_contract_info?r=tzs3q&x-b3-traceid=61b961cd8f311fe4692696120828a0b0",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"dm",
+						"linear",
+						"v1",
+						"linear_swap_contract_info"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "tzs3q"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "61b961cd8f311fe4692696120828a0b0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linear-swap-ws",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.huobi.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "TGqSnHE27ZDk2+XIBtEcBw=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://futures.huobi.com/linear-swap-ws",
+					"protocol": "wss",
+					"host": [
+						"futures",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"linear-swap-ws"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ws_index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.huobi.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "DMR845KcstXPmqMdFxVwPQ=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://futures.huobi.com/ws_index",
+					"protocol": "wss",
+					"host": [
+						"futures",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"ws_index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exchange_rate list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/exchange/btc_usdt/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1949000229.1633185003; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; _ha_session=1633338140648; _ha_session_id=904d9f74-ade0-328f-a50d-2f14cf14; _gid=GA1.2.200651060.1633338150; _gat=1; etpToTradeTip=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/general/exchange_rate/list?r=v60vg",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"general",
+						"exchange_rate",
+						"list"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "v60vg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "common exchages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "hb-api-version",
+						"value": "1.7"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/exchange/btc_usdt/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1949000229.1633185003; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; _ha_session=1633338140648; _ha_session_id=904d9f74-ade0-328f-a50d-2f14cf14; _gid=GA1.2.200651060.1633338150; _gat=1; etpToTradeTip=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/pro/v1/common/exchange?symbol=btcusdt&r=gmmnpa&x-b3-traceid=f22b24ef64ca98370f7d1a8ab5bed1bc",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"pro",
+						"v1",
+						"common",
+						"exchange"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "btcusdt"
+						},
+						{
+							"key": "r",
+							"value": "gmmnpa"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "f22b24ef64ca98370f7d1a8ab5bed1bc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "finance fluid-mining produc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.huobi.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.huobi.com/en-us/topic/primepool/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ga=GA1.2.1949000229.1633185003; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E8%87%AA%E7%84%B6%E6%90%9C%E7%B4%A2%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC%22%2C%22%24latest_referrer%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22%24device_id%22%3A%2217c41695bfb3f-05c8720f07a7c98-142f1c08-2707396-17c41695bfc239%22%7D; _ha_session=1633338140648; _ha_session_id=904d9f74-ade0-328f-a50d-2f14cf14; _gid=GA1.2.200651060.1633338150; etpToTradeTip=1; _gat=1"
+					}
+				],
+				"url": {
+					"raw": "https://www.huobi.com/-/x/hbg/finance/fluid-mining/product/list?r=7xilq8&x-b3-traceid=43346fdd212f7b248412d26f454fa39c",
+					"protocol": "https",
+					"host": [
+						"www",
+						"huobi",
+						"com"
+					],
+					"path": [
+						"-",
+						"x",
+						"hbg",
+						"finance",
+						"fluid-mining",
+						"product",
+						"list"
+					],
+					"query": [
+						{
+							"key": "r",
+							"value": "7xilq8"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "43346fdd212f7b248412d26f454fa39c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract_price_limit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "futures.hbg.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "hbsession",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://futures.hbg.com/en-us/contract/exchange/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ha_session_id=5314a22c-028b-35bd-b996-3d2b2a1b; _ha_session=1633339412802; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%7D; Hm_lvt_48f7148c90f6896fb01900901cd04119=1633339421; Hm_lpvt_48f7148c90f6896fb01900901cd04119=1633339421"
+					}
+				],
+				"url": {
+					"raw": "https://futures.hbg.com/contract-order/x/v1/contract_price_limit?symbol=BTC&contract_type=&contract_code=&x-b3-traceid=9144f224d0bddf908902c9c47b1f931f",
+					"protocol": "https",
+					"host": [
+						"futures",
+						"hbg",
+						"com"
+					],
+					"path": [
+						"contract-order",
+						"x",
+						"v1",
+						"contract_price_limit"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC"
+						},
+						{
+							"key": "contract_type",
+							"value": ""
+						},
+						{
+							"key": "contract_code",
+							"value": ""
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "9144f224d0bddf908902c9c47b1f931f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract_open_interest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "futures.hbg.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "hbsession",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://futures.hbg.com/en-us/contract/exchange/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ha_session_id=5314a22c-028b-35bd-b996-3d2b2a1b; _ha_session=1633339412802; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%7D; Hm_lvt_48f7148c90f6896fb01900901cd04119=1633339421; Hm_lpvt_48f7148c90f6896fb01900901cd04119=1633339421"
+					}
+				],
+				"url": {
+					"raw": "https://futures.hbg.com/contract-order/x/v1/contract_open_interest?symbol=BTC&contract_type=quarter&contract_code=BTC211231&x-b3-traceid=3a68a71ec1163092414f1f98bdc38b8a",
+					"protocol": "https",
+					"host": [
+						"futures",
+						"hbg",
+						"com"
+					],
+					"path": [
+						"contract-order",
+						"x",
+						"v1",
+						"contract_open_interest"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC"
+						},
+						{
+							"key": "contract_type",
+							"value": "quarter"
+						},
+						{
+							"key": "contract_code",
+							"value": "BTC211231"
+						},
+						{
+							"key": "x-b3-traceid",
+							"value": "3a68a71ec1163092414f1f98bdc38b8a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linear_swap_trade_status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "futures.hbg.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "hbsession",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://futures.hbg.com/en-us/contract/exchange/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ha_session_id=5314a22c-028b-35bd-b996-3d2b2a1b; _ha_session=1633339412802; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%7D; Hm_lvt_48f7148c90f6896fb01900901cd04119=1633339421; Hm_lpvt_48f7148c90f6896fb01900901cd04119=1633339421"
+					}
+				],
+				"url": {
+					"raw": "https://futures.hbg.com/linear-swap-order/x/v1/linear_swap_trade_status?x-b3-traceid=db43cf0d1d9b69498efbfe7c902e29c6",
+					"protocol": "https",
+					"host": [
+						"futures",
+						"hbg",
+						"com"
+					],
+					"path": [
+						"linear-swap-order",
+						"x",
+						"v1",
+						"linear_swap_trade_status"
+					],
+					"query": [
+						{
+							"key": "x-b3-traceid",
+							"value": "db43cf0d1d9b69498efbfe7c902e29c6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract_trade_status",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "futures.hbg.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "hbsession",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://futures.hbg.com/en-us/contract/exchange/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ha_session_id=5314a22c-028b-35bd-b996-3d2b2a1b; _ha_session=1633339412802; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%7D; Hm_lvt_48f7148c90f6896fb01900901cd04119=1633339421; Hm_lpvt_48f7148c90f6896fb01900901cd04119=1633339421"
+					}
+				],
+				"url": {
+					"raw": "https://futures.hbg.com/contract-order/x/v1/contract_trade_status?x-b3-traceid=e8e3b720a5e0c5e7febabb7b5d394b33",
+					"protocol": "https",
+					"host": [
+						"futures",
+						"hbg",
+						"com"
+					],
+					"path": [
+						"contract-order",
+						"x",
+						"v1",
+						"contract_trade_status"
+					],
+					"query": [
+						{
+							"key": "x-b3-traceid",
+							"value": "e8e3b720a5e0c5e7febabb7b5d394b33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contract_index",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "futures.hbg.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json; charset=UTF-8"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "source",
+						"value": "web"
+					},
+					{
+						"key": "hbsession",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://futures.hbg.com/en-us/contract/exchange/"
+					},
+					{
+						"key": "cookie",
+						"value": "_ha_session_id=5314a22c-028b-35bd-b996-3d2b2a1b; _ha_session=1633339412802; sajssdk_2015_cross_new_user=1; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2217c4a9d933fc7-0770059e60382f8-152f1c08-2707396-17c4a9d93412c%22%7D; Hm_lvt_48f7148c90f6896fb01900901cd04119=1633339421; Hm_lpvt_48f7148c90f6896fb01900901cd04119=1633339421"
+					}
+				],
+				"url": {
+					"raw": "https://futures.hbg.com/contract-order/x/v1/contract_index?x-b3-traceid=e2ed4ec6c795dce1e9b95fa401dad824",
+					"protocol": "https",
+					"host": [
+						"futures",
+						"hbg",
+						"com"
+					],
+					"path": [
+						"contract-order",
+						"x",
+						"v1",
+						"contract_index"
+					],
+					"query": [
+						{
+							"key": "x-b3-traceid",
+							"value": "e2ed4ec6c795dce1e9b95fa401dad824"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

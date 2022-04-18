@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "99c73026-d901-47de-9444-4c7f54a1a23a",
+		"name": "coinapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://rest.coinapi.io/v1/ohlcv/BITSTAMP_SPOT_BTC_USD/history?period_id=1DAY&time_start=2011-09-14T00:00:00&limit=100",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CoinAPI-Key",
+						"value": "27A5DD04-50F2-4DB7-BC22-70EEE197818A"
+					}
+				],
+				"url": {
+					"raw": "https://rest.coinapi.io/v1/ohlcv/BITSTAMP_SPOT_BTC_USD/history?period_id=1DAY&time_start=2011-09-14T00:00:00&limit=100",
+					"protocol": "https",
+					"host": [
+						"rest",
+						"coinapi",
+						"io"
+					],
+					"path": [
+						"v1",
+						"ohlcv",
+						"BITSTAMP_SPOT_BTC_USD",
+						"history"
+					],
+					"query": [
+						{
+							"key": "period_id",
+							"value": "1DAY"
+						},
+						{
+							"key": "time_start",
+							"value": "2011-09-14T00:00:00"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "time_end",
+							"value": "2019-03-15T00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

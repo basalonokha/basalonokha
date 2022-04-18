@@ -1,0 +1,1122 @@
+{
+	"info": {
+		"_postman_id": "b3d3d148-15c6-48f4-b37b-437a3136c32e",
+		"name": "coin market cap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get ranks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/topsearch/rank",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"topsearch",
+						"rank"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "map all coins",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/map/all?cryptoAux=is_active,status&exchangeAux=is_active,status&listing_status=active,untracked",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"map",
+						"all"
+					],
+					"query": [
+						{
+							"key": "cryptoAux",
+							"value": "is_active,status"
+						},
+						{
+							"key": "exchangeAux",
+							"value": "is_active,status"
+						},
+						{
+							"key": "listing_status",
+							"value": "active,untracked"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "web socket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					},
+					{
+						"key": "Sec-WebSocket-Key",
+						"value": "jTKXXG/dXa195KsUwxz8qg=="
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "Upgrade",
+						"value": "websocket"
+					},
+					{
+						"key": "Sec-WebSocket-Extensions",
+						"value": "permessage-deflate; client_max_window_bits"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "Upgrade"
+					},
+					{
+						"key": "Sec-WebSocket-Version",
+						"value": "13"
+					}
+				],
+				"url": {
+					"raw": "wss://stream.coinmarketcap.com/price/latest",
+					"protocol": "wss",
+					"host": [
+						"stream",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"price",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details of cryptocurrency",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=10000&sortBy=market_cap&sortType=asc&cryptoType=all&tagType=all&audited=false&aux=ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,tags,platform,max_supply,circulating_supply,total_supply,volume_7d,volume_30d&tagSlugs=defi&convert=USDT",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"cryptocurrency",
+						"listing"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10000"
+						},
+						{
+							"key": "sortBy",
+							"value": "market_cap"
+						},
+						{
+							"key": "sortType",
+							"value": "asc"
+						},
+						{
+							"key": "convert",
+							"value": "USD,BTC,ETH",
+							"disabled": true
+						},
+						{
+							"key": "cryptoType",
+							"value": "all"
+						},
+						{
+							"key": "tagType",
+							"value": "all"
+						},
+						{
+							"key": "audited",
+							"value": "false"
+						},
+						{
+							"key": "aux",
+							"value": "ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,tags,platform,max_supply,circulating_supply,total_supply,volume_7d,volume_30d"
+						},
+						{
+							"key": "tagSlugs",
+							"value": "defi"
+						},
+						{
+							"key": "convert",
+							"value": "USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ntf collections",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Linux\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/nft/collections?start=100&limit=100&sort=volume&desc=true&period=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"nft",
+						"collections"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "100"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "sort",
+							"value": "volume"
+						},
+						{
+							"key": "desc",
+							"value": "true"
+						},
+						{
+							"key": "period",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "historical",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical?id=1&convertId=9023&timeStart=1632700800&timeEnd=1637971200",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"cryptocurrency",
+						"historical"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "convertId",
+							"value": "9023"
+						},
+						{
+							"key": "timeStart",
+							"value": "1632700800"
+						},
+						{
+							"key": "timeEnd",
+							"value": "1637971200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "converter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/tools/price-conversion?amount=1&convert_id=825&id=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"tools",
+						"price-conversion"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "1"
+						},
+						{
+							"key": "convert_id",
+							"value": "825"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "market pair",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/market-pairs/latest?slug=bitcoin&start=101&limit=100&category=spot&sort=cmc_rank_advanced",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"cryptocurrency",
+						"market-pairs",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "slug",
+							"value": "bitcoin"
+						},
+						{
+							"key": "start",
+							"value": "101"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						},
+						{
+							"key": "category",
+							"value": "spot"
+						},
+						{
+							"key": "sort",
+							"value": "cmc_rank_advanced"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "full coin detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=10000&sortBy=market_cap&sortType=desc&convert=USD,BTC,ETH,USDT,BNB&cryptoType=all&tagType=all&audited=false&aux=ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,max_supply,circulating_supply,total_supply,volume_7d,volume_30d,logo",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"cryptocurrency",
+						"listing"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10000"
+						},
+						{
+							"key": "sortBy",
+							"value": "market_cap"
+						},
+						{
+							"key": "sortType",
+							"value": "desc"
+						},
+						{
+							"key": "convert",
+							"value": "USD,BTC,ETH,USDT,BNB"
+						},
+						{
+							"key": "cryptoType",
+							"value": "all"
+						},
+						{
+							"key": "tagType",
+							"value": "all"
+						},
+						{
+							"key": "audited",
+							"value": "false"
+						},
+						{
+							"key": "aux",
+							"value": "ath,atl,high24h,low24h,num_market_pairs,cmc_rank,date_added,max_supply,circulating_supply,total_supply,volume_7d,volume_30d,logo"
+						},
+						{
+							"key": "convert",
+							"value": "USDT",
+							"disabled": true
+						},
+						{
+							"key": "sortBy",
+							"value": "binance",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marketcap",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "web-api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://web-api.coinmarketcap.com/v1.1/global-metrics/quotes/historical?format=chart&interval=1d&time_end=1644409853&time_start=1367181000",
+					"protocol": "https",
+					"host": [
+						"web-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1.1",
+						"global-metrics",
+						"quotes",
+						"historical"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "chart"
+						},
+						{
+							"key": "interval",
+							"value": "1d"
+						},
+						{
+							"key": "time_end",
+							"value": "1644409853"
+						},
+						{
+							"key": "time_start",
+							"value": "1367181000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "btc-dominance-global markecap",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "web-api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"98\", \"Google Chrome\";v=\"98\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://web-api.coinmarketcap.com/v1.1/cryptocurrency/quotes/historical?aux=search_interval,market_cap&format=chart&id=1,1027,825,1839,3408,52,2010,5426,4172,5805&include_global=true&interval=weekly&time_end=1644410513&time_start=1367181000",
+					"protocol": "https",
+					"host": [
+						"web-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1.1",
+						"cryptocurrency",
+						"quotes",
+						"historical"
+					],
+					"query": [
+						{
+							"key": "aux",
+							"value": "search_interval,market_cap"
+						},
+						{
+							"key": "format",
+							"value": "chart"
+						},
+						{
+							"key": "id",
+							"value": "1,1027,825,1839,3408,52,2010,5426,4172,5805"
+						},
+						{
+							"key": "include_global",
+							"value": "true"
+						},
+						{
+							"key": "interval",
+							"value": "weekly"
+						},
+						{
+							"key": "time_end",
+							"value": "1644410513"
+						},
+						{
+							"key": "time_start",
+							"value": "1367181000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "global-status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://web-api.coinmarketcap.com/v1/global-metrics/quotes/latest",
+					"protocol": "https",
+					"host": [
+						"web-api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"v1",
+						"global-metrics",
+						"quotes",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "daily historical per coin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.coinmarketcap.com"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"99\", \"Google Chrome\";v=\"99\""
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "platform",
+						"value": "web"
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.83 Safari/537.36"
+					},
+					{
+						"key": "x-request-id",
+						"value": "8fd20c6d-b0d0-4c69-ac6a-a62538259536"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "origin",
+						"value": "https://coinmarketcap.com"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "referer",
+						"value": "https://coinmarketcap.com/"
+					},
+					{
+						"key": "accept-language",
+						"value": "fa,en-US;q=0.9,en;q=0.8,de;q=0.7"
+					}
+				],
+				"url": {
+					"raw": "https://api.coinmarketcap.com/data-api/v3/cryptocurrency/historical?id=1&convertId=2781&timeStart=1367449200&timeEnd=1370041200",
+					"protocol": "https",
+					"host": [
+						"api",
+						"coinmarketcap",
+						"com"
+					],
+					"path": [
+						"data-api",
+						"v3",
+						"cryptocurrency",
+						"historical"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "convertId",
+							"value": "2781"
+						},
+						{
+							"key": "timeStart",
+							"value": "1367449200"
+						},
+						{
+							"key": "timeEnd",
+							"value": "1370041200"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
